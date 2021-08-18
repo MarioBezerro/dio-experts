@@ -1,15 +1,15 @@
-servidor:
-  porta:
+server:
+  port:
     8082
 
 eureka:
-  exemplo:
+  instance:
     hostname: localhost
-    porta: 9000
-  cliente:
+    port: 9000
+  client:
     registerWithEureka: true
-    fetchRegistry: falso
+    fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
-    servidor:
-      tempo de espera em ms-quando-sincroniza-vazio: 3000
+    server:
+      wait-time-in-ms-when-sync-empty: 3000
